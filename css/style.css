@@ -1,0 +1,102 @@
+/* Variabel CSS untuk memudahkan pengelolaan */
+:root {
+    --primary-color: #3498db; /* Warna utama */
+    --secondary-color: #f0f0f0; /* Warna sekunder */
+    --font-family: Arial, sans-serif; /* Jenis font */
+}
+
+body {
+    font-family: var(--font-family); /* Menggunakan jenis font yang ditentukan */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+    background-color: var(--secondary-color); /* Mengatur warna latar belakang */
+    display: flex; /* Menggunakan Flexbox untuk tata letak */
+    justify-content: center; /* Mencentralisasi konten secara horizontal */
+    align-items: center; /* Mencentralisasi konten secara vertikal */
+    height: 100vh; /* Mengatur tinggi penuh viewport */
+    flex-direction: column; /* Mengatur arah kolom untuk Flexbox */
+}
+
+.container {
+    background-color: #fff; /* Warna latar belakang kontainer */
+    padding: 20px; /* Menambahkan padding di dalam kontainer */
+    border-radius: 8px; /* Membuat sudut kontainer melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    max-width: 800px; /* Mengatur lebar maksimum untuk responsivitas yang lebih baik */
+    margin: 0 auto; /* Mencentralisasi kontainer secara horizontal */
+    text-align: center; /* Mengatur teks menjadi terpusat */
+}
+
+h1 {
+    margin-bottom: 20px; /* Jarak bawah untuk heading */
+    color: var(--primary-color); /* Mengatur warna heading */
+}
+
+.input-group {
+    margin: 10px 0; /* Jarak vertikal antara grup input */
+}
+
+label {
+    display: block; /* Menampilkan label sebagai blok */
+    margin-bottom: 5px; /* Jarak bawah untuk label */
+}
+
+input {
+    padding: 10px; /* Menambahkan padding di dalam input */
+    width: 100%; /* Membuat input responsif sepenuhnya */
+    box-sizing: border-box; /* Mengatur model kotak untuk menghindari overflow */
+    border: 1px solid #ccc; /* Mengatur border input */
+    border-radius: 4px; /* Membuat sudut input melengkung */
+}
+
+button {
+    margin-top: 10px; /* Jarak atas untuk tombol */
+    padding: 10px; /* Menambahkan padding di dalam tombol */
+    width: 100px; /* Lebar tombol */
+    margin-right: 10px; /* Jarak kanan untuk tombol */
+    background-color: var(--primary-color); /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Menghapus border default */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background-color 0.3s ease-in-out; /* Efek transisi saat hover */
+}
+
+button:hover {
+    background-color: #2980b9; /* Warna latar belakang tombol saat hover */
+}
+
+button:disabled {
+    background-color: #aaa; /* Warna latar belakang tombol saat dinonaktifkan */
+}
+
+#calculation {
+    margin-top: 20px; /* Jarak atas untuk hasil kalkulasi */
+    font-style: italic; /* Mengatur gaya font menjadi miring */
+}
+
+.explanation {
+    background-color: var(--secondary-color); /* Warna latar belakang untuk penjelasan */
+    padding: 20px; /* Menambahkan padding di dalam penjelasan */
+    border-radius: 8px; /* Membuat sudut penjelasan melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    max-width: 800px; /* Mengatur lebar maksimum untuk responsivitas yang lebih baik */
+    margin: 0 auto; /* Mencentralisasi penjelasan secara horizontal */
+}
+
+h2 {
+    margin-top: 0; /* Menghapus jarak atas untuk subjudul */
+    color: var(--primary-color); /* Mengatur warna subjudul */
+}
+
+p {
+    text-align: left; /* Mengatur teks menjadi rata kiri */
+}
+
+/* Media query untuk tampilan responsif */
+@media (max-width: 768px) {
+    /* Menyesuaikan ukuran font untuk layar yang lebih kecil */
+    h1, h2 {
+        font-size: 24px; /* Mengatur ukuran font untuk heading */
+    }
+}

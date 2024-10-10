@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Desain responsif untuk perangkat seluler -->
+    <title>Konversi Suhu</title> <!-- Judul halaman web -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Menghubungkan ke stylesheet CSS eksternal -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> <!-- Polyfill untuk dukungan ES6 -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> <!-- MathJax untuk merender ekspresi matematis -->
+    <script src="js/script.js"></script> <!-- Menghubungkan ke file JavaScript eksternal -->
+</head>
+<body> <!-- Memulai bagian tubuh dari dokumen -->
+    <div class="container"> <!-- Kontainer utama untuk konten -->
+        <h1>Konversi Suhu</h1> <!-- Judul utama halaman -->
+        <p>Masukkan suhu derajat Celsius (°C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p> <!-- Paragraf instruksi -->
+
+        <div class="input-group"> <!-- Pengelompokan untuk input Celsius -->
+            <p><label for="celsius">Celsius (°C):</label></p> <!-- Label untuk input Celsius -->
+            <input type="number" id="celsius" placeholder="Celsius" /> <!-- Kolom input untuk suhu Celsius -->
+        </div>
+
+        <button onclick="convertToFahrenheit()">Konversi</button> <!-- Tombol untuk mengonversi Celsius ke Fahrenheit -->
+        <button onclick="reset()">Reset</button> <!-- Tombol untuk mereset input -->
+        <button onclick="reverseConvert()">Reverse</button><br> <!-- Tombol untuk membalik konversi dari Fahrenheit ke Celsius -->
+
+        <br><br> <!-- Baris kosong untuk memberi jarak -->
+        <div class="input-group"> <!-- Pengelompokan untuk output Fahrenheit -->
+            <p><label for="fahrenheit">Fahrenheit (°F):</label></p> <!-- Label untuk output Fahrenheit -->
+            <input type="number" id="fahrenheit" placeholder="Fahrenheit" disabled /> <!-- Kolom input untuk suhu Fahrenheit, dinonaktifkan untuk pengeditan -->
+        </div>
+
+        <div class="input-group"> <!-- Pengelompokan untuk metode perhitungan -->
+            <p><label for="calculation">Cara Kalkulasi:</label></p> <!-- Label untuk metode perhitungan -->
+            <input type="text" id="calculation" placeholder="Cara Kalkulasi" disabled /> <!-- Kolom input untuk menampilkan metode perhitungan, dinonaktifkan untuk pengeditan -->
+        </div>
+    </div>
+
+    <div class="explanation"> <!-- Bagian untuk penjelasan konversi -->
+        <h2>Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h2> <!-- Subjudul untuk metode konversi -->
+        <p>Suho \( S \) dalam derajat Fahrenheit (°F) sama dengan suhu \( S \) dalam derajat Celsius (°C) kali 9/5 tambah 32.</p> <!-- Penjelasan rumus konversi -->
+
+        <p>\( S_{(°F)} = (S_{(°C)} \times 9/5) + 32 \)</p> <!-- Rumus konversi ditampilkan -->
+        <p>atau</p> <!-- Kata alternatif -->
+        <p>\( S_{(°F)} = (S_{(°C)} \times 1.8) + 32 \)</p> <!-- Rumus konversi alternatif ditampilkan -->
+    </div>
+</body>
+</html>
